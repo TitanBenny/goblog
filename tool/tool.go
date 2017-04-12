@@ -69,6 +69,7 @@ func Desc(code int) string {
 	for id, _ := range result {
 		sortedIdList = append(sortedIdList, id)
 	}
+
 	sort.Ints(sortedIdList)
 	for _, id := range sortedIdList {
 		name := result[id].name
